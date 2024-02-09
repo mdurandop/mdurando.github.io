@@ -1,12 +1,11 @@
 @use '../styles/util/colors' as *;
 
-.logo {
+.star {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 10px;
     img {
-        margin-top: -20px;
-        margin-left: 3px;
+        margin-top: 12px;
     }
 }
 .card-container {

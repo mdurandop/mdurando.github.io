@@ -20,14 +20,13 @@ p, a, li, ul {
   color: #fff;
 }
 
-.logo {
+.star {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 10px;
 }
-.logo img {
-  margin-top: -20px;
-  margin-left: 3px;
+.star img {
+  margin-top: 12px;
 }
 
 .card-container {
