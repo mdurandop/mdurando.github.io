@@ -4,7 +4,7 @@
   src: url(/app/styles/Acorn-Bold.ttf);
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Acorn", sans-serif;
+  font-family: "Acorn", "Poppins", sans-serif;
   color: #99B3E6;
 }
 
@@ -42,6 +42,36 @@ p, a, li, ul {
   font-weight: bold;
 }
 
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.galeria .cover {
+  background-color: #3371E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galeria .img1 {
+  width: 65%;
+  height: 200px;
+}
+.galeria .img2 {
+  width: 33%;
+}
+
+.omega-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.omega-section .alfa {
+  z-index: 1;
+  margin-top: -140px;
+  margin-left: 100px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -62,12 +92,28 @@ body {
 section {
   width: 480px;
   height: 1020px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .heading {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.button {
+  padding: 16px;
+  width: 45%;
+  margin: 12px;
+  border-radius: 5px;
+}
+
+.si {
+  background-color: #3371E5;
+}
+
+.no {
+  background-color: #1A428C;
 }
