@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @font-face {
   font-family: "Acorn";
-  src: url(/app/styles/Acorn-Bold.ttf);
+  src: url("../app/styles/Acorn-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Acorn", "Poppins", sans-serif;
@@ -52,13 +54,37 @@ p, a, li, ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 .galeria .img1 {
   width: 65%;
   height: 200px;
 }
 .galeria .img2 {
-  width: 33%;
+  width: 32%;
+}
+.galeria .img3 {
+  margin-top: 2%;
+  width: 15%;
+  height: 100px;
+}
+.galeria .img4 {
+  margin-top: 2%;
+  width: 65%;
+}
+.galeria .img5 {
+  margin-top: 2%;
+  width: 15%;
+}
+.galeria .img6 {
+  margin-top: 2%;
+  width: 35%;
+  height: 200px;
+}
+.galeria .img7 {
+  margin-top: 2%;
+  width: 62%;
+  height: 200px;
 }
 
 .omega-section {
