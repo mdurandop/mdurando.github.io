@@ -14,9 +14,15 @@
     .img1 {
         width: 65%;
         height: 200px;
+        background-image:url(/app/img/galery/louis.png);
+        img {
+            border-image: url(/app/img/galery/louis.png) 30 round;
+        }
     }
     .img2 {
         width: 32%;
+        background-image: url(/app/img/galery/coca-cola.png);
+        border-image: url(/app/img/galery/louis.png) 30 round;
     }
     .img3 {
         margin-top: 2%;
