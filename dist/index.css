@@ -126,13 +126,13 @@ section {
 .galeria .img1 {
   width: 65%;
   height: 200px;
-  -o-border-image: url(/app/img/galery/louis.png) 30 round;
-     border-image: url(/app/img/galery/louis.png) 30 round;
+  -o-border-image: url(app/img/galery/louis.png) 30 round;
+     border-image: url(app/img/galery/louis.png) 30 round;
 }
 .galeria .img2 {
   width: 32%;
-  -o-border-image: url(/app/img/galery/coca-cola.png) 30 round;
-     border-image: url(/app/img/galery/coca-cola.png) 30 round;
+  -o-border-image: url(app/img/galery/coca-cola.png) 30 round;
+     border-image: url(app/img/galery/coca-cola.png) 30 round;
 }
 .galeria .img2 img {
   color: red;
