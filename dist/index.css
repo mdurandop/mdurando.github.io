@@ -57,6 +57,7 @@ p, a, li, ul {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 .omega-section .alfa {
   z-index: 0;
