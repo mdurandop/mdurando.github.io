@@ -32,7 +32,7 @@ function toggleImg1() {
     if (cover.style.backgroundImage === 'none') {
         cover.style.backgroundColor = '$accent';
     } else {
-        cover.style.backgroundImage = 'url(/app/img/galery/louis.png)';
+        cover.style.backgroundImage = 'url(app/img/galery/louis.png)';
         cover.style.backgroundColor = '$accent';
         signo.style.display = 'none';
     }
