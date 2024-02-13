@@ -140,6 +140,7 @@ function no() {
     counter++;
     if (counter > 7) {
         no.style.opacity = '0';
+        no.style.cursor = 'auto';
     }
 }
 
