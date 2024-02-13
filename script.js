@@ -38,6 +38,6 @@ function toggleImg1() {
     }
 }
 
-document.querySelector('cover').addEventListener('click', toggleImg1);
+document.querySelector('.img').addEventListener('click', toggleImg1);
 
 
