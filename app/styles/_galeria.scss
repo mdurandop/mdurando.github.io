@@ -4,48 +4,55 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
-    .img, .cover {
+    .img {
         background-color: $accent;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        transition: background 0.5s ease-in-out;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 100%;
     }
     .img1 {
         width: 65%;
         height: 200px;
         border-image: url(app/img/galery/louis.png) 30 round;
+        max-width: 200%;
 
     }
     .img2 {
         width: 32%;
         border-image: url(app/img/galery/coca-cola.png) 30 round;
-        img {
-            color: red;
-        }
     }
     .img3 {
         margin-top: 2%;
         width: 20%;
         height: 100px;
+        border-image: url(app/img/galery/girasoles.png) 30 round;
     }
     .img4 {
         margin-top: 2%;
         width: 55%;
+        border-image: url(app/img/galery/1D.png) 30 round;
+
     }
     .img5 {
         margin-top:2%;
         width: 20%;
+        border-image: url(app/img/galery/minion.png) 30 round;
     }
     .img6 {
         margin-top: 2%;
         width: 35%;
         height: 200px;
+        border-image: url(app/img/galery/iker.png) 30 round;
     }
     .img7 {
         margin-top:2%;
         width: 62%;
         height: 200px;
+        border-image: url(app/img/galery/taylor.png) 30 round;
     }
 }

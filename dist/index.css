@@ -115,50 +115,61 @@ section {
   flex-wrap: wrap;
   gap: 2%;
 }
-.galeria .img, .galeria .cover {
+.galeria .img {
   background-color: #3371E5;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  transition: background 0.5s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100%;
 }
 .galeria .img1 {
   width: 65%;
   height: 200px;
   -o-border-image: url(app/img/galery/louis.png) 30 round;
      border-image: url(app/img/galery/louis.png) 30 round;
+  max-width: 200%;
 }
 .galeria .img2 {
   width: 32%;
   -o-border-image: url(app/img/galery/coca-cola.png) 30 round;
      border-image: url(app/img/galery/coca-cola.png) 30 round;
 }
-.galeria .img2 img {
-  color: red;
-}
 .galeria .img3 {
   margin-top: 2%;
   width: 20%;
   height: 100px;
+  -o-border-image: url(app/img/galery/girasoles.png) 30 round;
+     border-image: url(app/img/galery/girasoles.png) 30 round;
 }
 .galeria .img4 {
   margin-top: 2%;
   width: 55%;
+  -o-border-image: url(app/img/galery/1D.png) 30 round;
+     border-image: url(app/img/galery/1D.png) 30 round;
 }
 .galeria .img5 {
   margin-top: 2%;
   width: 20%;
+  -o-border-image: url(app/img/galery/minion.png) 30 round;
+     border-image: url(app/img/galery/minion.png) 30 round;
 }
 .galeria .img6 {
   margin-top: 2%;
   width: 35%;
   height: 200px;
+  -o-border-image: url(app/img/galery/iker.png) 30 round;
+     border-image: url(app/img/galery/iker.png) 30 round;
 }
 .galeria .img7 {
   margin-top: 2%;
   width: 62%;
   height: 200px;
+  -o-border-image: url(app/img/galery/taylor.png) 30 round;
+     border-image: url(app/img/galery/taylor.png) 30 round;
 }
 
 #envelope {
