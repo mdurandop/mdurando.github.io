@@ -134,12 +134,12 @@ let counter = 1;
 
 function no() {
     let no = document.querySelector('.no');
-    
+
     no.style.width = '35%';
     no.style.width = `${35 - counter * 5}%`;
     counter++;
     if (counter > 7) {
-        no.style.display = 'none';
+        no.style.opacity = '0';
     }
 }
 
