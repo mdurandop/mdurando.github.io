@@ -130,6 +130,20 @@ function toggleImg7() {
 
 document.querySelector('.img7').addEventListener('click', toggleImg7);
 
+let counter = 1;
 
+function no() {
+    let no = document.querySelector('.no');
+    
+    no.style.width = '35%';
+    no.style.width = `${35 - counter * 5}%`;
+    counter++;
+    if (counter > 7) {
+        no.style.display = 'none';
+    }
+}
 
+function yes() {
+    document.querySelector('.respuesta').innerText = 'Sabía que dirías que sí muajaja';
 
+}
