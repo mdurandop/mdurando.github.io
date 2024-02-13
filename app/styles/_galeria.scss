@@ -4,25 +4,26 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
-    .cover {
+    .img, .cover {
         background-color: $accent;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
+        transition: background 0.5s ease-in-out;
     }
     .img1 {
         width: 65%;
         height: 200px;
-        background-image:url(/app/img/galery/louis.png);
-        img {
-            border-image: url(/app/img/galery/louis.png) 30 round;
-        }
+        border-image: url(/app/img/galery/louis.png) 30 round;
+
     }
     .img2 {
         width: 32%;
-        background-image: url(/app/img/galery/coca-cola.png);
-        border-image: url(/app/img/galery/louis.png) 30 round;
+        border-image: url(/app/img/galery/coca-cola.png) 30 round;
+        img {
+            color: red;
+        }
     }
     .img3 {
         margin-top: 2%;

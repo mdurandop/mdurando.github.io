@@ -24,3 +24,20 @@ $( document ).ready(function() {
     }
    
 });
+
+function toggleImg1() {
+    let cover = document.querySelector('.img1');
+    let signo = document.querySelector('.signo');
+    
+    if (cover.style.backgroundImage === 'none') {
+        cover.style.backgroundColor = '$accent';
+    } else {
+        cover.style.backgroundImage = 'url(/app/img/galery/louis.png)';
+        cover.style.backgroundColor = '$accent';
+        signo.style.display = 'none';
+    }
+}
+
+document.querySelector('cover').addEventListener('click', toggleImg1);
+
+

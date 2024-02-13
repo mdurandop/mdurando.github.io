@@ -115,27 +115,27 @@ section {
   flex-wrap: wrap;
   gap: 2%;
 }
-.galeria .cover {
+.galeria .img, .galeria .cover {
   background-color: #3371E5;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  transition: background 0.5s ease-in-out;
 }
 .galeria .img1 {
   width: 65%;
   height: 200px;
-  background-image: url(/app/img/galery/louis.png);
-}
-.galeria .img1 img {
   -o-border-image: url(/app/img/galery/louis.png) 30 round;
      border-image: url(/app/img/galery/louis.png) 30 round;
 }
 .galeria .img2 {
   width: 32%;
-  background-image: url(/app/img/galery/coca-cola.png);
-  -o-border-image: url(/app/img/galery/louis.png) 30 round;
-     border-image: url(/app/img/galery/louis.png) 30 round;
+  -o-border-image: url(/app/img/galery/coca-cola.png) 30 round;
+     border-image: url(/app/img/galery/coca-cola.png) 30 round;
+}
+.galeria .img2 img {
+  color: red;
 }
 .galeria .img3 {
   margin-top: 2%;
