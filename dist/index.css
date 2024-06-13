@@ -337,3 +337,53 @@ section {
   background-color: white;
   color: #3371E5;
 }
+
+.two-months-msg .new-msg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.two-months-msg .new-msg h2 {
+  margin-left: 5px;
+}
+.two-months-msg .new-msg img {
+  margin-left: -5px;
+}
+.two-months-msg .postcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 98%;
+  background-color: white;
+  border-radius: 15px;
+  transition: all 0.9s;
+}
+.two-months-msg .postcard .message p {
+  color: black;
+  font-size: 1.6ch;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.two-months-msg .postcard .message .blue-p {
+  color: #1A428C;
+  font-weight: 600;
+}
+.two-months-msg .postcard .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.two-months-msg .postcard .images .img1 {
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.two-months-msg .postcard:hover {
+  box-shadow: 0.2em 0.2em 5px #3371E5; /* IE 9 */ /* Chrome, Safari, Opera */
+  transform: rotate(2.5deg);
+  transition: all 0.9s ease;
+}
