@@ -361,7 +361,6 @@ section {
 }
 .two-months-msg .postcard .message p {
   color: black;
-  font-size: 1.6ch;
   margin-left: 20px;
   margin-bottom: 10px;
 }
@@ -387,4 +386,24 @@ section {
   box-shadow: 0.2em 0.2em 5px #3371E5; /* IE 9 */ /* Chrome, Safari, Opera */
   transform: rotate(2.5deg);
   transition: all 0.9s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .postcard {
+    width: 100dvw;
+    height: 20dvh;
+  }
+  .postcard .message p {
+    font-size: 8px;
+  }
+  .postcard .images {
+    border-radius: 5px;
+  }
+  .postcard .images .img1 {
+    width: 99%;
+    margin-right: 30px;
+  }
+  .postcard .images .img2 {
+    width: 100%;
+  }
 }
