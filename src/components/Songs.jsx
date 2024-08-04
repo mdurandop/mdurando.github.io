@@ -1,11 +1,12 @@
 import React from "react";
 import SpotifyEmbed from "./SpotifyEmbed";
+import star from '../assets/star.svg';
 
 const Songs = () => {
     return (
         <div className="mx-3">
             <div className="flex gap-3 items-start">
-                <img src="/star.svg" alt="" className="w-5" />
+                <img src={star} alt="" className="w-5" />
                 <h1 className="text-xl">Canciones</h1>
             </div>
             <div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../envelope.css";
+import star from '../assets/star.svg';
 
 const Envelope = () => {
     const envelopeRef = useRef(null);
@@ -35,7 +36,7 @@ const Envelope = () => {
     return (
         <div className="mx-3">
             <div className="flex gap-3 items-start">
-                <img src="/star.svg" alt="estrella" />
+                <img src={star} alt="estrella" />
                 <h1 className="text-xl">Happy Valentines Day!</h1>
             </div>
             <div className="my-2">

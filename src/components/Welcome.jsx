@@ -2,12 +2,13 @@ import React from "react";
 import moon from '../assets/noche.svg';
 import flowers from '../assets/flores.svg';
 import hearts from '../assets/dia-de-san-valentin.svg'
+import star from '../assets/star.svg';
 
 const Welcome = () => {
     return (
         <div className="mx-3">
             <div className="flex gap-3 items-start">
-                <img src="/star.svg" alt="" className="w-5" />
+                <img src={star} alt="" className="w-5" />
                 <h1 className="text-xl">Bienvenida</h1>
             </div>
             <div className="flex flex-col gap-4">
@@ -25,7 +26,7 @@ const Welcome = () => {
                 </p>
             </div>
             <div className="flex gap-3 items-start">
-                <img src="/star.svg" alt="" className="w-5" />
+                <img src={star} alt="" className="w-5" />
                 <h1 className="text-xl">¿Por qué Moonlight Garden?</h1>
             </div>
             <div>
@@ -46,8 +47,6 @@ const Welcome = () => {
                         <img src={hearts} alt="" className="w-7/12"/>
                         <p className="text-sm text-text">Emoción</p>
                    </div> 
-                   
-
                 </div>
             </div>
         </div>
