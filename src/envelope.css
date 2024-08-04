@@ -1,4 +1,8 @@
-@use '../styles/util/colors' as *;
+:root {
+    --primary: #99b3e6;
+    --secondary: #1a428c;
+    --accent: #3371e5;
+}
 
 #envelope {
     margin-top: 100px;
@@ -9,40 +13,40 @@
     border-bottom-right-radius: 6px;
     margin-left: auto;
     margin-right: auto;
-    background-color: $accent;
+    background-color: var(--accent);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .front {
+}
+
+.front {
     position: absolute;
     width: 0;
     height: 0;
     z-index: 3;
-  }
-  
-  .flap {
+}
+
+.flap {
     border-left: 140px solid transparent;
     border-right: 140px solid transparent;
     border-bottom: 82px solid transparent;
     /* a little smaller */
-    border-top: 98px solid $accent;
+    border-top: 98px solid var(--accent);
     /* a little larger */
     transform-origin: top;
     pointer-events: none;
-  }
-  
-  .pocket {
-    border-left: 140px solid $primary;
-    border-right: 140px solid $primary;
-    border-bottom: 90px solid $primary;
+}
+
+.pocket {
+    border-left: 140px solid var(--primary);
+    border-right: 140px solid var(--primary);
+    border-bottom: 90px solid var(--primary);
     border-top: 90px solid transparent;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-  }
-  
-  .letter {
+}
+
+.letter {
     position: relative;
-    background-color: $primary;
+    background-color: var(--primary);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -50,119 +54,124 @@
     top: 5%;
     border-radius: 6px;
     box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
-  }
-  
-  .letter:after {
+}
+
+.letter:after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(113, 113, 236, 0.7) 70%, $secondary 100%);
-  }
-  
-  .words {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(113, 113, 236, 0.7) 70%,
+        var(--secondary) 100%
+    );
+}
+
+.words {
     position: absolute;
     left: 10%;
     width: 80%;
     height: 14%;
-    font-family: 'Acorn', 'Poppins', sans-serif;
+    font-family: "Acorn", "Poppins", sans-serif;
     font-size: 1.1em;
     color: #212863;
-  }
-  
-  .words.line1 {
+}
+
+.words.line1 {
     top: 15%;
     width: 100%;
     height: 7%;
-  }
-  
-  .words.line2 {
+}
+
+.words.line2 {
     top: 30%;
-  }
-  
-  .words.line3 {
+}
+
+.words.line3 {
     top: 50%;
-  }
-  
-  .words.line4 {
+}
+
+.words.line4 {
     top: 70%;
-  }
-  
-  .open .flap {
+}
+
+.open .flap {
     transform: rotateX(180deg);
     transition: transform 0.4s ease, z-index 0.6s;
     z-index: 1;
-  }
-  
-  .close .flap {
+}
+
+.close .flap {
     transform: rotateX(0deg);
     transition: transform 0.4s 0.6s ease, z-index 1s;
     z-index: 5;
-  }
-  
-  .close .letter {
+}
+
+.close .letter {
     transform: translateY(0px);
     transition: transform 0.4s ease, z-index 1s;
     z-index: 1;
-  }
-  
-  .open .letter {
+}
+
+.open .letter {
     transform: translateY(-60px);
     transition: transform 0.4s 0.6s ease, z-index 0.6s;
     z-index: 2;
-  }
-  
-  @-webkit-keyframes slideUp {
+}
+
+@-webkit-keyframes slideUp {
     0% {
-      top: 0;
+        top: 0;
     }
     100% {
-      top: -600px;
+        top: -600px;
     }
-  }
-  @keyframes slideUp {
+}
+@keyframes slideUp {
     0% {
-      top: 0;
+        top: 0;
     }
     100% {
-      top: -600px;
+        top: -600px;
     }
-  }
-  @-webkit-keyframes sideSway {
+}
+@-webkit-keyframes sideSway {
     0% {
-      margin-left: 0px;
+        margin-left: 0px;
     }
     100% {
-      margin-left: 50px;
+        margin-left: 50px;
     }
-  }
-  @keyframes sideSway {
+}
+@keyframes sideSway {
     0% {
-      margin-left: 0px;
+        margin-left: 0px;
     }
     100% {
-      margin-left: 50px;
+        margin-left: 50px;
     }
-  }
-  .envlope-wrapper {
+}
+.envlope-wrapper {
     height: 380px;
-  }
-  
-  .reset {
+}
+
+.reset {
     margin-top: -150px;
     text-align: center;
-  }
-  
-  .reset button {
+}
+
+.reset button {
     font-weight: 800;
     font-style: normal;
     transition: all 0.1s linear;
     background-color: transparent;
-    border: solid 2px $secondary;
+    border: solid 2px var(--accent);
     border-radius: 4px;
-    color: $primary;
+    color: var(--primary);
     display: inline-block;
     font-size: 14px;
     text-transform: uppercase;
@@ -172,9 +181,9 @@
     text-decoration: none;
     min-width: 120px;
     cursor: pointer;
-  }
-  
-  .reset button:hover {
+}
+
+.reset button:hover {
     background-color: white;
-    color: $accent;
-  }
+    color: var(--accent);
+}
