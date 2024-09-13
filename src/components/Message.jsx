@@ -1,11 +1,11 @@
 import React from "react";
-import star from "../assets/star.svg";
+import warningSing from "../assets/anuncio.svg";
 
 const Message = ({ title, msg, msg2, msg3, msg4, msg5 }) => {
     return (
         <div className="mx-3">
             <div className="flex items-start gap-2">
-                <img src={star} alt="" className="w-5" />
+                <img src={warningSing} alt="" className="w-5" />
                 <h1 className="text-xl">{title}</h1>
             </div>
             <div className="flex flex-col gap-2">

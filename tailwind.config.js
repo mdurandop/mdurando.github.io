@@ -12,7 +12,8 @@ export default {
       secondary: '#1A428C',
       accent: '#3371E5',
       card: '#0B0E14',
-      text: '#fff'
+      text: '#fff',
+      warning: '#ffb02e'
     }
   },
   plugins: [],

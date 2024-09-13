@@ -20,34 +20,8 @@ const Gallery = () => {
                     Aquí tienes un bento (🍱) de tus cosas y personas favoritas
                     ¡Toca cada una!
                 </p>
-                <div className="flex flex-col gap-2">
-                    <div className="flex h-full gap-2">
-                        <div>
-                            <img src={Louis} alt="" className="h-full rounded-md"/>
-                        </div>
-                        <div>
-                            <img src={CocaCola} alt="" className="h-full rounded-md"/>
-                        </div>
-                    </div>
-                    <div className="flex gap-2">
-                        <div className="w-1/5">
-                            <img src={Sunflower} alt="" className="rounded-md"/>
-                        </div>
-                        <div style={{width: '55%'}}>
-                            <img src={OneDirection} alt="" className="rounded-md"/>
-                        </div>
-                        <div className="w-1/5">
-                            <img src={Minion} alt="" className="rounded-md"/>
-                        </div>
-                    </div>
-                    <div className="flex gap-2">
-                        <div>
-                            <img src={Iker} alt="" className="rounded-md" />
-                        </div>
-                        <div>
-                            <img src={Taylor} alt="" className="rounded-md"/>
-                        </div>
-                    </div>
+                <div className="flex flex-col justify-center items-center w-full  gap-2 h-96 bg-accent">
+                    <p className="font-medium">🚧 En mantenimiento! ⚠️</p>
                 </div>
             </div>
         </div>
